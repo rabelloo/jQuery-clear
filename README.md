@@ -20,7 +20,7 @@ Default behavior is picking `input`, `textarea` and `select` elements.<br>
 **Selects** will have their **first option selected**;<br>
 The rest will have its value changed to `""`.
 
-Elements cleared will trigger 'change' when they're all done.
+Elements cleared will trigger `change` when they're all done.
 
 ## Custom clear
 You may also define a custom clear value for each element using `data-clear`.
