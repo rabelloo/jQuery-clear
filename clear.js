@@ -28,17 +28,17 @@
               .not(noClear)
                   .each(function () {
                       var $input = $(this);
-                      var originalValue = $input.data('originalvalue');
+                      var clearValue = $input.data('clear');
 
                       // Type check
                       if ($input.is(':checkbox, :radio'))
-                          $input.prop('checked', originalValue || false);
+                          $input.prop('checked', clearValue || false);
 
                       else if ($input.is('select'))
-                          $input.val(originalValue || $input.find('option').val());
+                          $input.val(clearValue || $input.find('option').val());
 
                       else
-                          $input.val(originalValue || '');
+                          $input.val(clearValue || '');
                   })
                   .trigger('change');
 
